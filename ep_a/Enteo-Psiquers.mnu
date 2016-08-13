@@ -1,0 +1,11 @@
+Interrumpir download de noticias:/.sockclose enteopsiquers | echo -t @Enteo-Psiquers Download de noticias interrumpido!
+Volver a descargar noticias:/.sockclose enteopsiquers | /enteopsiquers
+-
+Abrir Noticias de hoy (ya bajadas) {
+    if ($exists($scriptdirnews\ $+ %enteofileoffline) == $true) { run notepad $scriptdirnews\ $+ %enteofileoffline }
+}
+Abrir directorio de todas las noticias (ya bajadas):{
+    if ($exists($scriptdirnews) == $true) { run explorer $scriptdirnews\ }
+}
+-
+[Limpiar pantalla]:/clear @Enteo-Psiquers

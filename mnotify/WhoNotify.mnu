@@ -1,0 +1,62 @@
+Find Text...:/findtext $$?="Text to search?"
+-
+UCentral (UWho):/uwho $$?="Enter UCentral (/UWHO) parameters:"
+Who...:/who $$?="Enter /WHO parameters:"
+WhoWas...:/whowas $$?="Enter /WHOWAS parameters:"
+Whois...:/whois $$?="Enter /WHOIS parameters:"
+Other command(s)...://$$?="Please enter other command(s) and parameters:"
+-
+NN Info...
+.by nick...:{
+/set %nninfo $$?="Enter nick in notify list to info:"
+if ($notify(%nninfo).note == $null) {
+echo @WhoNotify 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(no note) 2[ $+ 14 $+ %level- [ $+ [ %nninfo ] ] 1- 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+echo -s 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(no note) 2[ $+ 14 $+ %level- [ $+ [ %nninfo ] ] 1- 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+}
+else {
+echo @WhoNotify 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+echo -st 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+}
+}
+.by notify number...:{
+/set %nninfo $$?="Enter Notify number of nick in notify list to info:"
+if ($notify(%nninfo).note == $null) {
+echo @WhoNotify 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(no note) 2[ $+ 14 $+ %level- [ $+ [ $notify(%nninfo) ] ] 1- 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+echo -s 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(no note) 2[ $+ 14 $+ %level- [ $+ [ $notify(%nninfo) ] ] 1- 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+}
+else {
+echo @WhoNotify 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+echo -st 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+}
+}
+-
+LOG files
+.Open DIR:/run $logdirusers
+.-
+.Notify's (notify.log):/run notepad.exe $logdirusers\notify.log 
+.Who's (who.log):/run notepad.exe $logdirusers\who.log 
+.Whois (whois.log):/run notepad.exe $logdirusers\whois.log 
+.-
+.Delete LOG files:/.remove $logdirusers\who.log | /.remove $logdirusers\whois.log | /.remove $logdirusers\notify.log | .echo -st 4Deleting12 $logdirusers\*.log $+ 4...
+.-
+-
+[Reset Variables]:{ /varnnunset | .echo -st 4NN: 12Variables unseted! }
+-
+Window On:{
+ .enable #whohide | .echo -st 2- | .echo -st 5m4Notify 4Window Status: 12On | .echo -st 2- | /window -c @WhoNotify
+  /window -kwdn @WhoNotify whonotify.mnu | /titlebar @WhoNotify - Last Update: $date ( $+ $day $+ ) at  $timestamp
+  /font @WhoNotify 10 MS Sans Serif
+  /echo @WhoNotify 2-
+  /echo @WhoNotify 4[Caution!] Closes this window can cause script errors!!! If you want deactivate this window, go to mNotify menu of Menubar.
+  /echo @WhoNotify 12[Info]2 You can press right click mouse and access to menu in this window.
+  /echo @WhoNotify 2-
+  /echo @WhoNotify 
+}
+Window Off: .disable #whohide | .echo -st 2- | .echo -st 5m4Notify 4Window Status: 12Off | .echo -st 2- | /window -c @WhoNotify
+-
+Info Window:/echo @WhoNotify 2- | /echo @WhoNotify 12[Info]2 You can press right click mouse and access to menu in this window. | /echo @WhoNotify 9[3Info9]3 This window dedicated to print all /WHO commands! | /echo @WhoNotify 2-
+ReadMe file:/run $findfile($mircdir,mnotify.txt,1)
+-
+[Clear this Window]:/clear
+-
+Del LOG file (who.log):/.remove $logdirusers\who.log | .echo -at 4Deleting12 $logdirusers\who.log $+ 4...

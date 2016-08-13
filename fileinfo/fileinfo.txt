@@ -1,0 +1,38 @@
+ File Info Addon 0.25b Readme file!
+
+ ---
+
+ English Language:
+
+ FileInfo Addon 0.25b for mIRC by A-Kristo (29 NOV 2000) - jalbam@tinet.fut.es
+
+ This is a simple addon for mIRC dedicated to recopilate maximum information from you
+ system. You can use it but never modificated or change credits (autor name).
+
+ If you want, use addon with you mIRC script (:
+ Plagiarism is for lamers! :P
+
+ Thanks for use this AddOn! 
+
+ For any questions, please write me.
+
+ -
+
+ Lengua Castellana:
+
+ FileInfo Addon 0.25b para mIRC by A-Kristo (29 NOV 2000) - jalbam@tinet.fut.es
+
+ Este es un simple addon para mIRC dedicado a recoger la mayor informacion de tu
+ sistema. Podeis utilizar siempre y cuando lo modifiqueis ni cambieis el nombre del autor.
+
+ Si quieres usalo con tu script del mIRC (:
+ El plagio es para lamers! :P
+
+ Gracias por usar este AddOn!
+
+ Para cualquier cuestion, escribeme porfavor.
+
+ ---
+
+ A-Kristo,
+ jalbam@tinet.fut.es

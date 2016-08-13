@@ -1,0 +1,257 @@
+                 
+ -----------------------------------------
+ *[=> mNotify Addon 0.96b ReadMe file <=]*
+  ----\-----------------------------/----
+      |___[Dedicated to ^AzKiss^]___|
+      (   ·"""""""""""""""""""""·   )
+      !-----=d(_I LOVE YOU!_)b=-----!
+       ªªªªªªªªªºººººººººººªªªªªªªªª
+        { @=¨^x<_:"'·.·'":_>x^¨=@ }
+                  ".   ."  
+                    " "
+                     "
+
+
+
+ % ENG: Please, read complete this file... ->
+ % SP:  Porfavor, lee todo el archivo... (mas abajo esta en castellano) ->
+
+             
+
+ English Language: (mas abajo en castellano!)
+
+ mNotify Addon 0.96b for mIRC by A-Kristo (03 JUN 2001) - jalbam@tinet.fut.es
+
+ * Files Package * ->
+
+ mNotify.mrc   AddOn! Load this file in your mIRC application (;
+ whonotify.mnu Menu of WhoNotify window.
+ mnotify.bmp   Little mNotify logo (for WhoNotify window background).
+ nowho.txt     File with list of strings to ignored when a person has left
+               IRC. No erase the first line!
+ onirc.txt     File with format [person] [message]! When a person of your
+               notify list has join IRC, auto-execute /msg [person] [message].
+               You can edit this file, but never erase the line number one!
+ nnmsg.mnu     NNMSG Window menu.
+ nnmsg.bmp     NNMSG Window background (black). You can edit.
+ mNotify.txt   ¿? (:
+
+ <- * End of Files Package *
+
+
+
+ What's New (03 JUN 2001):
+
+ - New change in notify nicks on DCC CHAT! ;D
+ - Now print notify number in NN Info.
+ - New menu on right click press in NNView Window. Much options!!! cOOl (;
+ - Now you can open NNMSG.log in the NNMSG Window when press right click and select this option.
+ - Depurated code again.
+ - Fixed the bug of NNUpdate. Now you can actualize to new version! no problem (:
+ - Now flash the WhoNotify Window when a text has printed in her and WhoNotify Window are't
+   active.
+ - Actualized NOWHO.txt with a space character (code alt+255)
+ - Something several bugs are fixed!!! ;D
+ - Bug fix: now isn't background in all windows (;
+ - New NNView Window with a list of all notify nicks (:
+ - Nicks List/Stadistics in log file! thx to Ss (:
+ - Now when connect the addon auto-comprobe if exists a new version respect to
+   actual version addon in addon WEB page. If exists, saved this new version
+   with nnupdate.zip in addon directory.
+ - Now the addon del .ini extension and have .mrc extension.
+ - If a person of your notify write /ctcp your_nick nnmsg one_message, addon
+   open a window and print the one_message text. Good for urgent message :D
+   (you can deactivate this option in mNotify menu).
+ - Now, on load script, posicionate in position number one of the scripts :D
+ - Now exist Special NN (Notify Nick) WhoIs and Special NN Whowas!
+ - Can access to /UWHO command (UCentral) in WhoNotify menu (right-click).
+ - Now auto-execute /WHOWAS command when a user of your notify list has left
+   IRC.
+ - Fix little "NN Info" bug.
+ - Now show in status (and in active, if active isn't a channel) Quit Info
+   message when a person of your notify list are in a channel of you are and
+   has quit IRC.
+ - If you like, can publicity only in channel: see mNotify menu of channel
+   (right click).
+ - The AddOn now is more optional. You can change options in mNotify menu of
+   menubar (:
+ - You can add person in auto-message on IRC in mNotify menu of nicklist.
+ - Show red nick prefix on a person of your notify list send a private
+   message. You can configure this prefix (default is !).
+ - Fixeg a bug ocurred when executed "/WHO [$me]" (/WHO your_nick) command: 
+   the first character of your ip was erased (:
+ - When a person of your notify list are in a channel of you are and has quit
+   IRC, print info-message in Status and in active if active window is not
+   a channel (Notify Nick Movement) :D
+ - New onirc.txt file! you can edit this file for autoexecute /msg [person]
+   [message] when this [person] has join IRC (need person in notify list).
+   The format is very simple: Nick_of_person message_to_send (see the
+   examples).
+ - Fixed a bug, success when a more of one person has left IRC: no comprobed
+   the USERID ignores in 'NOWHO.TXT' file!
+ - Now execute /WHO Addres_person_of_database when a person of your notify
+   list has join IRC for search clones, etc... (:
+ - You can access to "[Clear this Window]" option for clear buffer (/clear
+   command) in WhoNotify menu (right-click).
+ - When a person of your notify list has left IRC, execute automatic
+   /WHO UserID_person and /WHO Address_person commands... but when a lot of
+   persons use an identical UserID, mIRC program can locked. Well, now exist
+   a list of ignore strings (words) of text in 'NOWHO.TXT' file. If a UserID
+   of person are a string contents in this file ('NOWHO.TXT'), no execute
+   /WHO UserID_person command when this person hast left IRC. You can edit
+   this file with your strings but never erase the line number one or can cause
+   errors (:
+ - Now print when person of your notify list has left channel of you are! (in
+   status window).
+ - New menu in nickname list and query/chat created!!! ;D
+ - You can reset variables! ;D (see mNotify menu and WhoNotify window menu).
+ - Show the level of person in "nick is on IRC" and "nick has left on IRC"!
+ - In the WhoNotify menu (right-click) are a new options: "WhoWas...",
+   "WhoIs" and "Other command(s)...". If you want use /WHOWAS, /WHOIS or
+   another command(s), press option! :D
+ - Now automatic /WHO UserID_of_nick and /WHO Addres_of_nick when person
+   (nick) of your notify list has left IRC! You can controle if a person of
+   your notify list changes nickname but no disconnect (8< [only use when
+   nicknames have +i mode!]
+ - Show Address and UserID in on notify ("nick is on IRC") and unotify
+   ("nick has left IRC") messages! You can follow you notify nicks! ;D
+ - New depured code! :D (no bugs... uh?)
+ - Ampliate the WhoNotify menu with more options (LOG files, ReadMe file...).
+ - Now the people of your notify list destaqued with a "NN" (black and white)
+   symbols in WhoNotify window.
+ - You can activate/deactivate WhoNotify window.
+ - You can find a text on WhoNotify window! ;D (press right click in window).
+ - Print all /WHO command's in new WhoNotify window! Is very nice and
+   colourful (:
+ - Now auto-execute /WHO command (with all nicknames from notify list) when
+   type /notify or a person has left IRC.
+ - Automatic login to [LogDir]\users\notify.log with all notifies and more.
+   The [LogDir]\users\who.log have all /WHO's and [LogDir]\users\nnmsg.log
+   contents all nnmsg send to you.
+ - Notify Nick Movement notification: if a person of your notify list enter on
+   a channel of you are, echo message if you active window isn't this channel.
+   And this person changes nickname, echo a message if active window isn't a
+   channel. And if person part channel or quit IRC in channel, echo message in
+   status window (or in active if active is query of the person).
+ - New colourful notify list in Status Window and active window: if a person
+   has joined IRC or left IRC, echo a message in status (and in active
+   window). The Notify Notes are present when joined a person and are present
+   when left a person :D
+ - If you type /notify in Status Window, say a number of people are connected
+   in IRC Server and number of notifies have you in notify list (format:
+   number_of_connection(s)/number_of_notifies_in_notify_list).
+ - Double Language: English and Spanish!
+
+ ---
+
+ Installation: copy files in mIRC directory (or an subdirectory) of your mIRC
+ and type in mIRC: //load -rs $findfile($mircdir,mnotify.mrc,1)
+
+ This is a simple addon for mIRC dedicated to improve a lot Standard Notify
+ List from mIRC.
+ You can use it but never modificated or change credits (author name).
+
+ If you want, use addon with you mIRC script (:
+ Plagiarism is for lamers! :P
+
+ For unload type //unload -rs $findfile($mircdir,mnotify.mrc,1)
+
+ Thanks for use this AddOn! 
+
+ For any questions, please write me.
+
+
+
+
+ ----------------------------------------------------------------------------
+
+
+
+
+ Lengua Castellana: (mas arriba en ingles!)
+
+ FileInfo Addon 0.96b para mIRC by A-Kristo (03 JUN 2001) - jalbam@tinet.fut.es
+
+ * Archivos en el paquete * ->
+
+ mNotify.mrc   AddOn! Carga este archivo en tu mIRC (;
+ whonotify.mnu El menu de la ventana WhoNotify.
+ mnotify.bmp   Pequeño logo mNotify (para el fondo de la ventana WhoNotify).
+ nowho.txt     Archivo con la lista de las cadenas de texto a ignoradar
+               cuando una persona de tu notify se marcha del IRC. No borres
+               la primera linea!
+ onirc.txt     Archivo con el formato [persona] [mensaje]! Cuando una persona
+               de tu notify entra en el IRC, se auto ejecuta el comando /msg
+               [persona] [mensaje]. Puedes editar el archivo, pero nunca
+               borrar la linea numero uno!
+ nnmsg.mnu     Menu de la ventana de NNMSG.
+ nnmsg.bmp     Fondo de la ventana NNMSG (negro). Puedes modificarlo.
+ mNotify.txt   ¿? (:
+
+ <- * Fin de Archivos en el paquete *
+
+
+
+ Novedades (03 JUN 2001):
+
+ - Nuevo cambio de los notify nicks en los DCC CHAT! ;D
+ - Ahora imprime el numero de notify al ejecutar NN Info.
+ - Nuevo menu al apretar el boton derecho del raton en NNView Window. Muchas opciones!!! (;
+ - Ahora puedes abrir el NNMSG.log en la NNMSG Window cuando apretas el boton derecho y
+   seleccionas esa opcion.
+ - Codigo depurado nuevamente.
+ - Corregido el bug del NNUpdate que imposibilitaba la actualizacion
+   del AddOn a una nueva version. Ahora funciona!
+ - Ahora parpadea la WhoNotify Window al imprimirse un texto en ella
+   cuando no esta activa.
+ - Actualizada la lista NOWHO.txt con un carater de espacio (codigo alt+255)
+ - Algunos bugs muy importantes corregidos!!! ;D
+ - Bug corregido: ahora no hay background en ninguna ventana (;
+ - Nueva ventana NNView con una lista de todos los notify nicks (:
+ - Al conectar ahora el addon comprueba automaticamente si existe la version
+   que le sigue a la version actual en la pagina WEB de este. Si existe, la
+   baja con el nombre nnupdate.zip en el directorio del addon.
+ - Nuevo leeme con las novedades y lista de archivos en el paquete tambien en
+   castellano.
+ - Nuevo codigo depurado!
+ - Ahora el addon pase de ser .ini a .mrc
+ - Todas las opciones del mNotify son configurables.
+ - Es preferible leerse las novedades (What's new) en ingles, ya que aparecen
+   muchisimas cosas que aqui no se comentan y que son de bastante interes.
+
+ -
+
+ Instalacion: copiar archivos en el directorio del mIRC (o un subdirectorio)
+ de tu mIRC y teclea en el mIRC: //load -rs $findfile($mircdir,mnotify.mrc,1)
+
+ Este es un simple addon para mIRC dedicado a mejorar en mucho el Notify List
+ standard del mIRC.
+ Podeis utilizar siempre y cuando NO lo modifiqueis ni cambieis el nombre del
+ autor.
+
+ Si quieres usalo con tu script del mIRC (:
+ El plagio es para lamers! :P
+
+ Para descargarlo escribe //unload -rs $findfile($mircdir,mnotify.mrc,1)
+
+ Gracias por usar este AddOn!
+
+ Para cualquier cuestion, escribeme porfavor.
+
+
+
+ ------
+
+
+
+ A-Kristo,
+ jalbam@tinet.fut.es
+ http://www.emumania.com/guebzine > GüebZine (an E-Zine: Electronic magaZINE)
+ http://www.fut.es/~jalbam > A-Kristo's Homepage
+ http://drogas.miarroba.com > Venta On-line de drogas legales!
+
+ IRC Server(s): IRC Hispano.org (irc.irc-hispano.org...).
+
+
+
+<EOF> End Of File

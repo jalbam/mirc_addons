@@ -1,0 +1,79 @@
+                 
+ -----------------------------------------
+ *[=> FastMSG Addon 0.20b ReadMe file <=]*
+  ----\-----------------------------/----
+      |___[Dedicated to ^AzKiss^]___|
+      (   ·"""""""""""""""""""""·   )
+      !-----=d(_I LOVE YOU!_)b=-----!
+       ªªªªªªªªªºººººººººººªªªªªªªªª
+        { @=¨^x<_:"'·.·'":_>x^¨=@ }
+                  ".   ."  
+                    " "
+                     "
+
+
+(09/01/2001)
+
+
+Este AddOn es muy simple y sirve para que te puedan enviar mensajes llamativos
+y rapidos muy facilmente mediante CTCP. Al tenerlo activado se te abrira una
+ventana con el mensaje y el nick (como si fuera un mensaje privado mismo)
+cuando te mensajeen.
+
+El formato para las personas que quieran mensajearte sera:
+
+/ctcp tu_nick fastmsg [mensaje]
+
+...o bien:
+
+/ctcp tu_nick fmsg [mensaje]
+
+
+Para enviarle un mensaje a otra persona teniendo tu mismo el addon solo tienes
+que teclear:
+
+/fastmsg [nick] [mensaje]
+
+...o bien:
+
+/fmsg [nick] [mensaje]
+
+
+Proximamente se incorporara un antiflood y posibilidad de crear uno o varios
+logs.
+
+
+Si lo has descomprimido en el directorio raiz de tu mIRC o en algun
+subdirectorio, para cargarlo escribe:
+//load -rs $findfile($mircdir,fastmsg.mrc,1)
+Si lo has descomprimido en cualquier otro que no sea dentro de la carpeta del
+mIRC escribe:
+//load -rs $findfile($mircdir,c:\fastmsg.mrc,1)
+
+
+Luego solo tienes que abrir el menubar de vuestro mIRC (commands) o de vuestro
+script (el que sea) y luego el menu FastMSG :D
+
+Podeis modificarlo a vuestro antojo, pero solo para uso personal.
+Los creditos no deben ser jamas cambiados!!! El plagio es para lamers...
+
+
+Para cualquier critica, sugerencia, informacion o lo que querais, me podeis
+escribir a mi E-Mail (jalbam@tinet.fut.es).
+
+
+Gracias por utilizar este AddOn! ;D
+
+Que lo disfruteis... (:
+
+
+
+A-Kristo,
+http://www.emumania.com/guebzine -> E-Zine (Revista Electronica)
+http://www.fut.es/~jalbam -> A-Kristo's HomePage (Download Software ;D)
+jalbam@tinet.fut.es
+
+
+
+
+-=<E0F: Enf Of File>=-

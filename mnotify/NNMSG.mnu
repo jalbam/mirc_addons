@@ -1,0 +1,5 @@
+[Clear this Window]:/clear
+-
+Open LOG file (nnmsg.log):/run notepad.exe $logdirusers\nnmsg.log
+-
+Del LOG file (nnmsg.log):/.remove $logdirusers\nnmsg.log | .echo -at 4Deleting12 $logdirusers\nnmsg.log $+ 4...

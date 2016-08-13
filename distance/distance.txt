@@ -1,0 +1,11 @@
+
+4[12Distance AddOn 0.05 2by A-Kristo4]
+
+7Bienvenido a mi sistema! Tienes total acceso sobre este...
+
+
+5% 4Estos son los comandos:
+
+4* 6!welcome 2o 6!hi 2:3 sacan esta bienvenida
+4* 6!welcome_me 2o 6!hi_me 2:3 envian esta bienvenida por DCC en forma de .txt
+4* 6!close 2o 6!bye 2:3 cierra esta comunicacion

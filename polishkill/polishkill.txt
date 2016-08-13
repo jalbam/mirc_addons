@@ -1,0 +1,71 @@
+                 
+ ------------------------------------------
+ *[=> PolishKill Addon 1.00b ReadMe file <=]*
+  ----\-----------------------------/----
+      |___[Dedicated to ^AzKiss^]___|
+      (   ·"""""""""""""""""""""·   )
+      !-----=d(_I LOVE YOU!_)b=-----!
+       ªªªªªªªªªºººººººººººªªªªªªªªª
+        { @=¨^x<_:"'·.·'":_>x^¨=@ }
+                  ".   ."  
+                    " "
+                     "
+
+
+(11/01/2001)
+
+
+Este es un simple y sencillo, pero util AddOn para mIRC destinado a ejecutar
+acciones (las que desees, puedes elegir) con los "Polacos" del IRC Hispano,
+los polacos de UnderNET y muchas otras redes de IRC, y los polacos del Java
+Chat del IRC Hispano.ORG (esos nicks que comienzan por INV, GUEST, CHAT, USER,
+BOT, NICK, IRC, SERVER, U, IR o YO y luego les sigue un numero. p.ej inv838373,
+yo34343, guest747465, chat34336, user31224, bot56788, nick23231, irc45578,
+server211, u23421, irc829211, etc...).
+
+Proximamente: java*, ghost*, .... (no han sido
+incorporados todos por posibles problemas que intentaran solucionarse de
+alguna forma). Tambien se incorporara la posibilidad de activar/desactivar
+los nicks que se quiere que sean afectados y los que no.
+
+
+Tambien puedes elegir si hacer algo cuando uno entra en un canal! (:
+...y ahora tambien puedes hacer que si alguien se pone "un nick polaco", lo
+avise (mediante notice o msg) o no haga nada (;
+
+
+Si lo has descomprimido en el directorio raiz de tu mIRC o en algun
+subdirectorio, para cargarlo escribe:
+//load -rs $findfile($mircdir,polishkill.mrc,1)
+Si lo has descomprimido en cualquier otro que no sea dentro de la carpeta del
+mIRC escribe:
+//load -rs $findfile(c:\,polishkill.mrc,1)
+Si simplemente lo descomprimes en el directorio RAIZ del mIRC o de tu script:
+/load -rs polishkill.mrc
+
+Luego solo tienes que apretar el boton derecho en el canal y ver el menu
+"PolishKill" que aparece :D
+
+Podeis modificarlo a vuestro antojo, pero solo para uso personal.
+Los creditos no deben ser jamas cambiados!!! El plagio es para lamers...
+
+
+Para cualquier critica, sugerencia, informacion o lo que querais, me podeis
+escribir a mi E-Mail (jalbam@tinet.fut.es).
+
+
+Gracias por utilizar este AddOn! ;D
+
+Que lo disfruteis... (:
+
+
+
+A-Kristo,
+http://www.emumania.com/guebzine -> E-Zine (Revista Electronica)
+http://www.fut.es/~jalbam -> A-Kristo's HomePage (Download Software ;D)
+jalbam@tinet.fut.es
+
+
+
+
+-=<E0F: Enf Of File>=-

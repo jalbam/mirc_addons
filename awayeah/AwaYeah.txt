@@ -1,0 +1,36 @@
+                 
+ -----------------------------------------
+ *[=> AwaYeah Addon 0.25b ReadMe file <=]*
+  ----\-----------------------------/----
+      |___[Dedicated to ^AzKiss^]___|
+      (   ·"""""""""""""""""""""·   )
+      !-----=d(_I LOVE YOU!_)b=-----!
+       ªªªªªªªªªºººººººººººªªªªªªªªª
+        { @=¨^x<_:"'·.·'":_>x^¨=@ }
+                  ".   ."  
+                    " "
+                     "
+
+
+(19/05/2001)
+
+Este es un simple AddOn para mIRC con un sistema preeliminar de Away bastante sencillo pero
+util.
+
+Tiene distintas opciones, ademas de que hacer logging automatico en el directorio users dentro de
+la carpeta de logs predeterminada en un archivo llamado awayeah.log.
+
+Son necesarios los AddOns:
+* FastMSG AddOn by A-Kristo (http://www.fut.es/~jalbam)
+* SmS CoNTRoLeR (con SmS Sender 2.2 by hPm) by |-FaiR-| (http://fly.to/DoWnHeL)
+...Y que todos estos AddOns esten activados, por supuesto.
+
+
+ Visitar http://www.fut.es/~jalbam
+ ...y http://www.drogaslibres.com
+
+
+ !!!TE AMO ^AzKiss^ TE AMO!!! (((((x
+
+
+

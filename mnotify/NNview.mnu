@@ -1,0 +1,58 @@
+[Clear this Window]:/clear
+-
+Del notify nick
+.by nick...:/set %nn-toremove $$?="Input Nick to remove from your notify:" | if (%nn-toremove isnotify) { if ($?!="Do you want to Remove %nn-toremove notify nick?" == $true) { .echo -a 12- | .echo -a 12 $+ %nn-toremove 4has been deleted to Notify list! | .echo -a 12- | /.notify -r %nn-toremove } } | else { .echo -a 12- | .echo -a 12 $+ %nn-toremove 4aren't Notify Nick! | .echo -a 12- }
+.by notify number...:/set %nn-toremove $$?="Input Notify number of nick to remove from your notify:" | if ($notify(%nn-toremove) isnotify) { if ($?!="Do you want to Remove $notify(%nn-toremove) (number %nn-toremove $+ ) notify nick?" == $true) { .echo -a 12- | .echo -a 12 $+ $notify(%nn-toremove) (number %nn-toremove $+ ) 4has been deleted to Notify list! | .echo -a 12- | /.notify -r $notify(%nn-toremove) } } | else { .echo -a 12- | .echo -a 12 Number %nn-toremove 4aren't Notify Nick! | .echo -a 12- }
+Add notify nick...:/.notify $$?="Input Nick to add in your notify:"
+-
+Set Auto-MSG on connect...
+.set by nick...:/.write $scriptdironirc.txt $$?="Nick for Auto-message on connect?" $$?="Auto-message on connect?"
+.set by notify number...:/.write $scriptdironirc.txt $notify($$?="Notify number of nick for Auto-message on connect?") $$?="Auto-message on connect?"
+.-
+.Edit AutoMSG file:/run notepad.exe $scriptdironirc.txt
+-
+Find Text...:/findtext $$?="Text to search?"
+-
+UCentral (UWho):/uwho $$?="Enter UCentral (/UWHO) parameters:"
+Who...:/who $$?="Enter /WHO parameters:"
+WhoWas...:/whowas $$?="Enter /WHOWAS parameters:"
+Whois...:/whois $$?="Enter /WHOIS parameters:"
+Other command(s)...://$$?="Please enter other command(s) and parameters:"
+-
+NN Info...
+.by nick...:{
+/set %nninfo $$?="Enter nick in notify list to info:"
+if ($notify(%nninfo).note == $null) {
+echo @NNView 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(no note) 2[ $+ 14 $+ %level- [ $+ [ %nninfo ] ] 1- 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+echo -s 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(no note) 2[ $+ 14 $+ %level- [ $+ [ %nninfo ] ] 1- 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+}
+else {
+echo @NNView 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+echo -st 6***1 $timestamp 3NN Info: 2[12 $+ $notify(%nninfo) $+ 2]4 %nninfo 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ %nninfo ] ] 1-13 %name- [ $+ [ %nninfo ] ] $+ 2]
+}
+}
+.by notify number...:{
+/set %nninfo $$?="Enter Notify number of nick in notify list to info:"
+if ($notify(%nninfo).note == $null) {
+echo @NNView 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(no note) 2[ $+ 14 $+ %level- [ $+ [ $notify(%nninfo) ] ] 1- 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+echo -s 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(no note) 2[ $+ 14 $+ %level- [ $+ [ $notify(%nninfo) ] ] 1- 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+}
+else {
+echo @NNView 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+echo -st 6***1 $timestamp 3NN Info: 2[12 $+ %nninfo $+ 2]4 $notify(%nninfo) 15(10 $+ $notify(%nninfo).note $+ 15) 2[ $+ 5 $+ %addr- [ $+ [ $notify(%nninfo) ] ] 1-13 %name- [ $+ [ $notify(%nninfo) ] ] $+ 2]
+}
+}
+-
+LOG files
+.Open DIR:/run $logdirusers
+.-
+.Notify's (notify.log):/run notepad.exe $logdirusers\notify.log 
+.Who's (who.log):/run notepad.exe $logdirusers\who.log 
+.Whois (whois.log):/run notepad.exe $logdirusers\whois.log 
+.-
+.Delete LOG files:/.remove $logdirusers\who.log | /.remove $logdirusers\whois.log | /.remove $logdirusers\notify.log | .echo -st 4Deleting12 $logdirusers\*.log $+ 4...
+.-
+-
+ReadMe file:/run $findfile($mircdir,mnotify.txt,1)
+-
+Execute NNView again:/nnview

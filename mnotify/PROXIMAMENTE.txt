@@ -1,0 +1,15 @@
+· (kancelado) poner timestamp prefix en otro kolor k no sea el negro xD
+
+! (proximamente) ke se pueda editar/kitar a alwien dl automsg automatikamente ;D
+
+! (proximamente) hacer k el nnupload vaia!!! XD
+
+! (proximamente) arreglar lo dl ON NOTIFY kuando Notify Window is $active!
+
+! (proximamente) hacer on irc notifys distintos a los normales para bot's, amigos especiales, enemigos, etc.. k se distingan kon kolores o smileys o komo se elija xD
+
+= (en breve) sms on notify!!!!! by lolokop xD
+
+= (en breve) alarmas especiales para segun que on notify! ;D
+
+= (en breve) ON NOTIFY de nicks que estan en otro server! ;D

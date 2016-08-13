@@ -1,0 +1,3 @@
+;mNotify file-> Put your nicknames and your message if you want execute /msg nickname message when this person has join IRC (need person in your notify list!) - caution: NEVER ERASE THIS LINE!!!
+nick_example message_example
+nick_example2 hello nick_example2!!! this is a example (;
