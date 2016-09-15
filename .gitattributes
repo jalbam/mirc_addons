@@ -16,9 +16,9 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-#*.ini linguist-language=mSL
-#*.INI linguist-language=mSL
-#*.mnu linguist-language=mSL
-#*.MNU linguist-language=mSL
+*.ini linguist-language=mSL
+*.INI linguist-language=mSL
+*.mnu linguist-language=mSL
+*.MNU linguist-language=mSL
 *.mrc linguist-language=mSL
 *.MRC linguist-language=mSL
