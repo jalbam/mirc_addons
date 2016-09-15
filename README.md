@@ -8,6 +8,9 @@ Version: different versions
 - Date: 1998 to 2001 (approximately)
 
 
+![ScreenShot](screenshot.gif)
+
+
 Description
 
 Different add-ons for mIRC, the most famous IRC client.
