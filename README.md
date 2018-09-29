@@ -40,3 +40,8 @@ Different add-ons for mIRC, the most famous IRC client.
 **Distance AddOn** 0.05 (8th July 2001): script to remote control someone's computer (it could be considered a trojan if the user did not know what is the script for).
 
 **PubliBOT** 0.01b/0.001b (21st December 2001): an advertisement bot (spambot) made for mIRC with different options.
+
+
+## License
+
+This project can be used, reproduced, distributed and modified freely for any non-commercial purposes but always keeping the author's name and copyright clauses. Other than that, just use this project as you wish but never sell it!
