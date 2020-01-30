@@ -17,8 +17,11 @@
 *.RTF	 diff=astextplain
 
 *.ini linguist-language=mIRC Script
+*.INI linguist-language=mIRC Script
 *.mnu linguist-language=mIRC Script
+*.MNU linguist-language=mIRC Script
 *.mrc linguist-language=mIRC Script
+*.MRC linguist-language=mIRC Script
 
 *.htm linguist-detectable=false
 *.html linguist-detectable=false
